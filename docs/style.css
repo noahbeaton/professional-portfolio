@@ -1,16 +1,27 @@
 :root{
-    --blue: #195792;
+    --blue: #2d73b4;
     --white: #fff;
 }
 * {
     box-sizing: border-box;
-  }
+    background-color: var(--white);
+}
+
+  body {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
 
 header {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     padding: 20px;
-    background-color: var(--blue);  
+    background-color: var(--white);
+    color: var(--blue);
+    
 }
 
 nav ul {
@@ -20,7 +31,7 @@ nav ul {
     display: flex;
     text-align: center;
     overflow: hidden;
-    background-color: var(--blue);
+    background-color: var(--white);
 }
 
 li {
@@ -31,12 +42,12 @@ nav ul a {
     display:block;
     padding: 10px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--blue);
 }
 
 
 a:hover {
-    background-color: darkblue;
+    background-color:gray;
 }
 
 main section aside {
@@ -45,9 +56,22 @@ main section aside {
     margin-left: 80px;
     text-align: right;
     flex-direction: row;
+    color: var(--blue);
 }
+
+main section aside h2{
+    display: block;
+}
+
+main section aside img {
+    max-width: 200px;
+    display: inline-block;
+    flex-direction: row;
+}
+
 main section p {
     text-align: right;
+    color: var(--blue);
 }
 
 main section div {
@@ -66,5 +90,10 @@ main section div button {
 main section div button img{
     display: flex;
     justify-content: center;
-    max-width: 300px;
+    max-width: 200px;
+    margin: 5px;
+}
+
+footer {
+    color: var(--blue);
 }
